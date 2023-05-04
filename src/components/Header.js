@@ -33,13 +33,12 @@ const Header = () => {
           />
         </Navbar.Text>
         <Nav>
-          <Dropdown align="end">
+          <Dropdown className="mobileDropdowm" align="end">
             <Dropdown.Toggle variant="success">
               <ShoppingCartIcon />
               <Badge>{cart.length}</Badge>
             </Dropdown.Toggle>
-            <Dropdown.Menu
-              style={{ marginTop: 15, width: 400, paddingTop: 20 }}
+            <Dropdown.Menu className="dropdownMenu"
             >
               {cart.length > 0 ? (
                 <>

@@ -1,8 +1,8 @@
 body {
-  background-color: #9f9c9c;
-  opacity: 1;
-  background-image: radial-gradient(#000000 0.5px, #9f9c9c 0.5px);
-  background-size: 10px 10px;
+background-color: #9f9c9c;
+opacity: 1;
+background-image: radial-gradient(#000000 0.5px, #9f9c9c 0.5px);
+background-size: 10px 10px;
 
   margin: 0;
 }
@@ -77,11 +77,30 @@ body {
   object-fit: cover;
 }
 
+.singleCard{
+  width: 20rem;
+}
+.dropdowmMenu{
+  margin-top: 15px; 
+  width: 400px; 
+  padding-top: 15px;
+}
+
 @media (max-width: 771px) {
+  
+  .home{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
   .filters {
-    width: 40%;
+    width: 90%;
+    height: fit-content;
     padding: 10px;
     margin: 5px;
+    flex-direction: column;
+
   }
 
   .filters > span {
@@ -93,7 +112,7 @@ body {
   }
 
   .productContainer {
-    width: 58%;
+    width: 90%;
     padding: 0;
   }
 
@@ -103,5 +122,14 @@ body {
 
   .products {
     width: 100%;
+  }
+
+  .singleCard{
+    width: 21rem;
+  }
+  .dropdowmMenu{
+    margin-top: 15px; 
+    width: 100vw; 
+    padding-top: 15px;
   }
 }

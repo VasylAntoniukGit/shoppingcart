@@ -14,7 +14,7 @@ const SingleProduct = ({ prod }) => {
 
   return (
     <div className="products">
-      <Card style={{ width: "18rem" }}>
+      <Card className="singleCard">
         <Card.Img variant="top" src={prod.image} />
         <Card.Body>
           <Card.Title>{prod.name}</Card.Title>

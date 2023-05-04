@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form } from "react-bootstrap";
 import Rating from "./Rating";
 import { CartState } from "../context/Context";
@@ -8,7 +8,6 @@ const Filters = () => {
     productState: { byStock, byFastDelivery, byRating, sort },
     productDispatch,
   } = CartState();
-  console.log(byStock, byFastDelivery, byRating, sort);
   return (
     <div className="filters">
       <span className="title"> Filter products</span>
